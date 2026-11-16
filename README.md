@@ -6,15 +6,17 @@ Local SQLite database aggregating disclosed bug bounty reports, program scopes, 
 
 | Source | Reports | Scopes | Notes |
 |--------|---------|--------|-------|
-| HackerOne | ~15k | 90k+ | Public disclosed reports |
-| Code4rena | 6k+ | - | Audit contest findings |
-| Immunefi | 3.9k | 5.6k | Web3 audit reports |
-| Bugcrowd | 882 | 9.6k | Public disclosures |
+| HackerOne | 15,431 | 90,892 | Public disclosed reports |
+| Code4rena | 6,054 | - | Audit contest findings (H/M/QA/Gas) |
+| pentester.land | 6,527 | - | Researcher writeup links |
+| Immunefi | 3,886 | 5,642 | Web3 audit reports |
+| Bugcrowd | 882 | 9,590 | Public disclosures |
+| HackenProof | 355 | 2,027 | Bug bounty + audit contests |
 | PortSwigger | 153 | - | Research articles |
-| pentester.land | 6.5k | - | Writeup links |
-| MITRE | 1k+ | - | CWE + CAPEC patterns |
+| Intigriti | - | 4,318 | Scopes only |
+| YesWeHack | - | 2,679 | Scopes only |
 
-Plus 113k+ program scopes from arkadiyt/bounty-targets-data.
+**Totals: 33,288 reports, 121,030 scopes, 1,599 CWE/CAPEC attack patterns**
 
 ## Quick Start
 
@@ -57,9 +59,9 @@ bountydb/
 ├── recon.py             # CLI recon tool
 ├── SCHEMA.md            # Data schema
 ├── loaders/             # Platform-specific crawlers
-├── normalized/          # JSONL files (not in repo)
-├── sources/             # Raw data (not in repo)
-└── bountydb.sqlite      # Database (not in repo)
+├── normalized/          # JSONL files (gitignored)
+├── sources/             # Raw data (gitignored)
+└── bountydb.sqlite      # Database (gitignored)
 ```
 
 ## Building Your Own Database
