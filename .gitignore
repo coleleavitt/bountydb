@@ -1,0 +1,9 @@
+# Data files (too large for git)
+bountydb.sqlite
+normalized/
+sources/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
